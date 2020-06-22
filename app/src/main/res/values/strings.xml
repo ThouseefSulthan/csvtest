@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CSV Test</string>
+    <string name="alert">Alert</string>
+    <string name="internet_alert">You need proper internet connection to get the list.</string>
+    <string name="_settings">Settings</string>
+    <string name="ok">Ok</string>
 </resources>
