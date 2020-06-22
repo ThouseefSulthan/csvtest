@@ -58,7 +58,6 @@ public class FactListModel implements FactListPresenter {
         @Override
         protected void onPostExecute(String result) {
             try {
-                Log.e("RES", "-->" + result);
                 if (result != null) {
                     parseResult(result);
                 } else {
@@ -85,8 +84,11 @@ public class FactListModel implements FactListPresenter {
                 pojoList.setDescription(obj.getString("description"));
                 pojoList.setImagehref(obj.getString("imageHref"));
 
+                // add data in pojo class
                 pojos.add(pojoList);
             }
+
+            //show facts list
             mFactListView.displayFacts(pojos,strTitle);
         } catch (JSONException e) {
             e.printStackTrace();

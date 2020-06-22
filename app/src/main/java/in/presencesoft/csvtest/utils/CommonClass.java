@@ -79,9 +79,6 @@ public class CommonClass {
                 .writeTimeout(10, TimeUnit.SECONDS)
                 .build();
 
-
-        Log.e("GetURL", url);
-
         Request.Builder builder = new Request.Builder();
         builder.url(url);
         Request request = builder.build();

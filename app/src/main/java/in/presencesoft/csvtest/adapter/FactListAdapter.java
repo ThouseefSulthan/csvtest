@@ -45,6 +45,8 @@ public class FactListAdapter extends RecyclerView.Adapter<FactListHolder> {
 
         String url = list.getImagehref();
 
+
+        //Show image with glide
         Glide.with(context)
                 .load(url)
                 .centerCrop()

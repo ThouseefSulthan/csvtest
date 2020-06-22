@@ -8,6 +8,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import android.os.Bundle;
 import android.view.View;
 
+
 import java.util.ArrayList;
 
 import in.presencesoft.csvtest.adapter.FactListAdapter;
@@ -29,17 +30,22 @@ public class MainActivity extends AppCompatActivity implements FactListView, Swi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         mPresenter = new FactListModel(this, this);
 
+        //initialize
         rvFacts = findViewById(R.id.rvFactsList);
+        swipLayout = findViewById(R.id.swipe_layout);
 
+        //call api
         if (new CommonClass(this).isOnline()) {
             mPresenter.getFacts();
         } else {
             new CommonClass(this).showAlertForInternet();
         }
 
-        swipLayout = findViewById(R.id.swipe_layout);
+
+
         swipLayout.setOnRefreshListener(this);
     }
 

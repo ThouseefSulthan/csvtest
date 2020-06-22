@@ -35,8 +35,8 @@
                 android:id="@+id/lblDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.7"
                 android:layout_gravity="center"
+                android:layout_weight="0.7"
                 android:padding="@dimen/five"
                 android:text="These Saturday night CBC broadcasts originally aired on radio in 1931. In 1952 they debuted on television and continue to unite (and divide) the nation each week."
                 android:textColor="@android:color/black"
@@ -47,8 +47,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_weight="2.3"
                 android:layout_margin="@dimen/five"
+                android:layout_weight="2.3"
                 android:scaleType="center"
                 android:src="@mipmap/ic_launcher" />
 
